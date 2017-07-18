@@ -1,0 +1,45 @@
+.sidebar {
+  /*position: fixed;*/
+  top: 20px;
+}
+
+.sidebar-title {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  word-wrap: normal;
+  white-space: normal;
+  cursor: pointer;
+}
+
+#sidebar-first {
+  margin-bottom: 0px;
+}
+
+#sidebar-last {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.3em;
+}
+
+.sidebar li {
+  color: black;
+  font-weight: 500;
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#credit {
+  font-size: 0.8em;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
