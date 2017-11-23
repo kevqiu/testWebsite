@@ -3,11 +3,12 @@
   top: 20px;
 }
 
-.sidebar-title, .sidebar-link:hover {
+.sidebar-title {
   color: black;
   position: relative;
+  font-size: 36px;
   font-weight: 600;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
   text-decoration: none;
   text-transform: uppercase;
   word-wrap: normal;
@@ -39,7 +40,8 @@
   font-weight: 500;
   font-size: 0.9em;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
   cursor: pointer;
 }
 
@@ -48,7 +50,8 @@
   font-weight: 700;
   font-size: 0.9em;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
+  letter-spacing: 0.1em;
   cursor: pointer;
 }
 

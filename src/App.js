@@ -19,6 +19,14 @@ const routeDict = [
         main: () => <About />
     },
     {
+        path: '/resume',
+        main: () => <About />
+    },
+    {
+        path: '/skills',
+        main: () => <About />
+    },
+    {
         path: '/portfolio',
         main: () => <Portfolio />
     },
@@ -28,9 +36,37 @@ const routeDict = [
 ];
 
 class App extends Component {
-    isSelectedRoute(route) {
+    constructor(props) {
+        super(props);
+        this.state = {
+            'about': false,
+            'resume': false,
+            'skills': false,
+            'portfolio': false,
+            'contact': false
+        };
+        this.clickSidebarLink = this.clickSidebarLink.bind(this);
+    }
+
+    componentWillMount() {
+        let route = window.location.hash.substring(2);
         console.log('route is ' + window.location.hash === '#/' + route);
-        return window.location.href.indexOf(route) !== -1;
+        this.setState({
+            [route]: true
+        });
+    }
+
+    clickSidebarLink(link) {
+        this.setState({
+            'about': false,
+            'resume': false,
+            'skills': false,
+            'portfolio': false,
+            'contact': false
+        });
+        this.setState({
+            [link]: true
+        });
     }
 
     render() {
@@ -46,10 +82,20 @@ class App extends Component {
                                 <h2 className='sidebar-title' id='sidebar-last'>Qiu</h2>
                             </Link>
                             <Link style={{textDecoration:'none'}} to="/about">
-                                <li className={'sidebar-link' + (this.isSelectedRoute('about') ? '-bold' : '')} >About</li>
+                                <li className={'sidebar-link' + (this.state['about'] ? '-bold' : '')} onClick={() => this.clickSidebarLink('about')}>About</li>
+                            </Link>
+                            <Link style={{textDecoration:'none'}} to="/resume">
+                                <li className={'sidebar-link' + (this.state['resume'] ? '-bold' : '')} onClick={() => this.clickSidebarLink('resume')}>Resume</li>
+                            </Link>
+                            <Link style={{textDecoration:'none'}} to="/skills">
+                                <li className={'sidebar-link' + (this.state['skills'] ? '-bold' : '')} onClick={() => this.clickSidebarLink('skills')}>Skills</li>
                             </Link>
                             <Link style={{textDecoration:'none'}} to="/portfolio">
-                                <li className={'sidebar-link' + (this.isSelectedRoute('portfolio') ? '-bold' : '')} >Portfolio</li>
+                                <li className={'sidebar-link' + (this.state['portfolio'] ? '-bold' : '')} onClick={() => this.clickSidebarLink('portfolio')}>Portfolio</li>
+                            </Link>
+                            <br/>
+                            <Link style={{textDecoration:'none'}} to="/contact">
+                                <li className={'sidebar-link' + (this.state['contact'] ? '-bold' : '')} onClick={() => this.clickSidebarLink('contact')}>Contact</li>
                             </Link>
                             <br/>
                             <p id="credit">&#169; 2017 Kevin Qiu</p>
