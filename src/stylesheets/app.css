@@ -3,10 +3,12 @@
   top: 20px;
 }
 
-.sidebar-title {
+.sidebar-title, .sidebar-link:hover {
+  color: black;
   position: relative;
   font-weight: 600;
   letter-spacing: -0.05em;
+  text-decoration: none;
   text-transform: uppercase;
   word-wrap: normal;
   white-space: normal;
@@ -22,17 +24,29 @@
   margin-bottom: 25px;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .sidebar ul {
   padding: 0;
   list-style: none;
   line-height: 1.3em;
 }
 
-.sidebar li {
+.sidebar-link {
   color: black;
   font-weight: 500;
-  font-size: 0.8em;
-  letter-spacing: -0.01em;
+  font-size: 0.9em;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.sidebar-link-bold {
+  color: black;
+  font-weight: 700;
+  font-size: 0.9em;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -42,4 +56,8 @@
   font-size: 0.8em;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+}
+
+#main-component {
+  margin-top: 15px; 
 }
