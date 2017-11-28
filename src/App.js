@@ -50,7 +50,6 @@ class App extends Component {
 
     componentWillMount() {
         let route = window.location.hash.substring(2);
-        console.log('route is ' + window.location.hash === '#/' + route);
         this.setState({
             [route]: true
         });
@@ -102,11 +101,12 @@ class App extends Component {
                         </ul>
                     </Col>
                     <Col id='main-component' xs={12} sm={8} md={7}>
-                        <Switch>
+                        <Home/>
+                        {/* <Switch>
                         {routeDict.map((route, i) => (
                             <Route key={i} path={route.path} exact={route.exact} component={route.main} />
                         ))}
-                        </Switch>
+                        </Switch> */}
                     </Col>
                 </div>
             </Router>

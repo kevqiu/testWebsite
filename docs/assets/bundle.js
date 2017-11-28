@@ -21968,7 +21968,6 @@
 	        key: 'componentWillMount',
 	        value: function componentWillMount() {
 	            var route = window.location.hash.substring(2);
-	            console.log('route is ' + window.location.hash === '#/' + route);
 	            this.setState(_defineProperty({}, route, true));
 	        }
 	    }, {
@@ -22085,13 +22084,7 @@
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Col,
 	                        { id: 'main-component', xs: 12, sm: 8, md: 7 },
-	                        _react2.default.createElement(
-	                            _reactRouterDom.Switch,
-	                            null,
-	                            routeDict.map(function (route, i) {
-	                                return _react2.default.createElement(_reactRouterDom.Route, { key: i, path: route.path, exact: route.exact, component: route.main });
-	                            })
-	                        )
+	                        _react2.default.createElement(_Home.Home, null)
 	                    )
 	                )
 	            );
@@ -45905,7 +45898,7 @@
 	        React.createElement(
 	            "h1",
 	            null,
-	            "Home"
+	            "Site is under construction!"
 	        )
 	    );
 	};
