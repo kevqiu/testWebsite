@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 import Styles from '../stylesheets/main.css';
 
-class About extends Component {
+class Skills extends Component {
     render() {
         return (
             <div>
-                <h1>About Me</h1>
-                <p>Hello there I am Kevin Qiu!</p>            
+                <h1>Skills</h1>
             </div>
         );
     }
 }
 
-export default About;
+export default Skills;
