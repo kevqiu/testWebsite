@@ -19,3 +19,11 @@ h1 {
     float: right;
     border: none;
 }
+
+.code-block {
+    font-family: monospace;
+    background-color: grey;
+    color: white;
+    padding: 5px;
+    width: 80%;
+}

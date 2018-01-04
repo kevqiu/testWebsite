@@ -6,8 +6,18 @@ class About extends Component {
     render() {
         return (
             <div>
-                <h1>About Me</h1>
-                <img className='me-image' src={Me}/>
+                <h1>About</h1>
+                <div className='code-block'>
+                > Kevin.city
+                "Vancouver, BC"
+
+                > Kevin.education
+                "University of British Columbia"
+                "Bachelor of Applied Science - Computer Engineering"
+
+                > Kevin.hobbies
+                []
+                </div>
                 <p>
                 My name is Kevin Qiu and I am third year Computer Engineering student studying at the University of Britsh Columbia. 
                 <br/><br/> 
