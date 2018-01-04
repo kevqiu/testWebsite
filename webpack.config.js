@@ -3,9 +3,8 @@ var webpack = require('webpack');
 module.exports = {
     entry: './src/index.js',
     output: {
-        path: './dist/assets',
         filename: 'bundle.js',
-        publicPath: '/assets'
+        path: __dirname + '/dist/assets'
     },
     devServer: {
         inline: true,
@@ -14,27 +13,34 @@ module.exports = {
         historyApiFallback: true
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 exclude: /(node_modules)/,
-                loader: ['babel-loader'],
-                query: {
-                    presets: ['latest', 'react', 'stage-0']
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-react', '@babel/preset-env']
+                    }
                 }
             },
             {
-                test: /\.json$/,
-                exclude: /(node_modules)/,
-                loader: 'json-loader'
-            },
-            {
                 test: /\.css$/,
-                loader: 'style-loader!css-loader!autoprefixer-loader'
+                loader: ['style-loader', 'css-loader']
             },
             {
                 test: /\.scss$/,
-                loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+                loader: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.(jpg|png)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'images/',
+                    }
+                }     
             }
         ]
     }

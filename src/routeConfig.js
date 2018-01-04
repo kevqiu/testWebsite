@@ -29,6 +29,10 @@ const routes = [
         main: () => <Portfolio />
     },
     {
+        path: '/contact',
+        main: () => <Contact />
+    },
+    {
         main: () => <Error404 />
     }
 ];

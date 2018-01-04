@@ -60,3 +60,4 @@ config.json
 
 # webpack
 dist
+public
