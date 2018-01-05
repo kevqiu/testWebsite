@@ -4,6 +4,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         filename: 'bundle.js',
+        publicPath: '/assets',
         path: __dirname + '/dist/assets'
     },
     devServer: {

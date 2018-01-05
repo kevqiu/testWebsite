@@ -1,29 +1,16 @@
+body {
+    background-color: black;
+    color: white;
+}
+
 h1 {
-    color: black;
+    color: white;
     position: relative;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
     letter-spacing: -0.02em;
     text-decoration: none;
     text-transform: uppercase;
     word-wrap: normal;
     white-space: normal;
-    cursor: pointer;
-}
-
-.me-image {
-    margin-top: 7px;
-    margin-bottom: 8px;
-    margin-left: 25px;
-    width: 275px;
-    float: right;
-    border: none;
-}
-
-.code-block {
-    font-family: monospace;
-    background-color: grey;
-    color: white;
-    padding: 5px;
-    width: 80%;
 }

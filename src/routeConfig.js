@@ -1,5 +1,5 @@
 import Home from './components/Home';
-import About from './components/About';
+import Overview from './components/Overview';
 import Resume from './components/Resume';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
@@ -13,8 +13,8 @@ const routes = [
         main: () => <Home />
     },
     {
-        path: '/about',
-        main: () => <About />
+        path: '/overview',
+        main: () => <Overview />
     },
     {
         path: '/resume',
