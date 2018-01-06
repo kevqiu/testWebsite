@@ -7,7 +7,6 @@ class About extends Component {
     render() {
         return (
             <div>
-                <h1>Overview</h1>
                 <div className='code-block-header'></div>                
                 <div className='code-block'>
                     > Kevin.City <br/>

@@ -23,7 +23,6 @@ class App extends Component {
     }
 
     componentWillMount() {
-        console.log('receiveprops');
         this.updateLocation();
     }
 
@@ -49,7 +48,6 @@ class App extends Component {
                 'home': false
             });
         } else {
-            console.log('rendering main menu')
             this.setState({
                 'home': true
             });
@@ -116,11 +114,11 @@ class App extends Component {
                     <div>
                         <Col className='sidebar' xsHidden sm={3} md={2} mdOffset={1}>
                             <ul>
-                                <h2 className='sidebar-title' id='sidebar-first'>Kevin</h2>
+                                {/* <h2 className='sidebar-title' id='sidebar-first'>Kevin</h2>
                                 <h2 className='sidebar-title' id='sidebar-last'>Qiu</h2>
                                 <Link style={{textDecoration:'none'}} to="/">
                                     <h2 className='sidebar-title' id='sidebar-last' onClick={() => this.clickLink('home')}>Qiu</h2>
-                                </Link>
+                                </Link> */}
                                 <Link
                                     className={'sidebar-link' + (this.state['overview'] ? ' bolded-link' : '')} 
                                     onClick={() => this.clickLink('overview')} 
