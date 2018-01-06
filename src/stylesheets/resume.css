@@ -1,0 +1,34 @@
+.resume-container {
+    width: 90%;
+}
+
+.resume-item {
+    line-height: 24px;
+    margin-bottom: 4px;
+  }
+  
+  .resume-title {
+    font-size: 22px;
+  }
+  
+  .resume-item-description {
+    font-size: 14px;
+  }
+  
+  .resume-timespan, .resume-location {
+    font-size: 14px;
+    float: right;
+  }
+  
+  .resume-description {
+    font-size: 14px;
+  }
+  
+  .resume-list {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+  }

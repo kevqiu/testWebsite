@@ -1,10 +1,36 @@
+.main-menu {
+  width: 25em;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.main-menu-line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50px;
+  border-bottom: 1px solid #ececec;
+}
+
 .sidebar {
   /*position: fixed;*/
   top: 20px;
 }
 
+.main-menu a, .main-menu p{
+  padding: 0;
+  margin-bottom: 3px;
+  line-height: 1.3em;
+  color: white;
+  font-weight: 500;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
 .sidebar-title {
-  color: black;
+  color: white;
   position: relative;
   font-size: 36px;
   font-weight: 600;
@@ -13,7 +39,6 @@
   text-transform: uppercase;
   word-wrap: normal;
   white-space: normal;
-  cursor: pointer;
 }
 
 #sidebar-first {
@@ -25,29 +50,32 @@
   margin-bottom: 25px;
 }
 
-.link {
-  text-decoration: none;
-}
-
-.sidebar ul {
+.main-menu ul, .sidebar ul {
   padding: 0;
   list-style: none;
-  line-height: 1.3em;
 }
 
-.sidebar-link {
-  color: black;
-  font-weight: 500;
-  font-size: 0.85em;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: -0.03em;
+.sidebar-link, .sidebar-link:hover {
   cursor: pointer;
   margin-top: 2px;
+  padding: 0;
+  margin-bottom: 3px;
+  line-height: 1.3em;
+  color: white;
+  font-weight: 500;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
 }
 
-.bolded-link {
+.sidebar-link:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.bolded-link, .bolded-link:hover {
   font-weight: 700;
+  text-decoration: none;
 }
 
 #credit {
