@@ -168,21 +168,20 @@ class App extends Component {
                             </ul>
                         </Col>
                         <Col id='main-component' xs={12} sm={8} md={7}>
-                            {
-                                window.location.href.indexOf('localhost') == -1 ? 
-                                <Construction/> :
-                                <Switch>
-                                {Routes.map((route, i) => (
-                                    <Route 
-                                        key={i} 
-                                        path={route.path} 
-                                        exact={route.exact} 
-                                        component={route.main} 
-                                        onChange={this.updateLocation}
-                                    />
-                                ))}
-                                </Switch> 
-                            }
+                        {
+                            window.location.href.indexOf('localhost') == -1 ? 
+                            <Construction/> :
+                            <Switch>
+                            {Routes.map((route, i) => (
+                                <Route
+                                    key={i}
+                                    path={route.path}
+                                    exact={route.exact}
+                                    component={route.main}
+                                />
+                            ))}
+                            </Switch> 
+                        }
                         </Col>
                     </div>
                 </Router>

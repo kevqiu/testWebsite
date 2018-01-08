@@ -1,0 +1,28 @@
+.skills-list {
+    display: block;
+    padding: 0;
+}
+
+.skills-header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+  
+.skills-item {
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;    
+    padding: 8px;
+    min-width: 4em;
+    color: #374054;
+    background: #e4e4ea;
+    text-align: center;
+}
+
+.note {
+    margin-top: 15px;    
+    color: grey;
+    font-size: 10px;
+    font-style: italic;
+}
